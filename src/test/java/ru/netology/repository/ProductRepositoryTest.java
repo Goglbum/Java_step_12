@@ -35,11 +35,11 @@ class ProductRepositoryTest {
         assertArrayEquals(expected, actual);
     }
 
-//    @Test
-//    public void removeByNonExistId() {
-//        repository.removeById(7);
-//        Product[] expected = new Product[]{item1, item2, item3, item4, item5, item6};
-//        Product[] actual = repository.findAll();
-//        assertArrayEquals(expected, actual);
-//    }
+    @Test
+    public void removeByNonExistId() {
+        repository.removeById(7);
+        Product[] expected = new Product[]{item1, item2, item3, item4, item5, item6};
+        Product[] actual = repository.findAll();
+        assertArrayEquals(expected, actual);
+    }
 }

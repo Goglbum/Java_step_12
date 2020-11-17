@@ -14,4 +14,11 @@ public class Product {
         this.name = name;
         this.price = price;
     }
+
+    public boolean matches(String search) {
+        if (search == name) {
+            return true;
+        }
+        return false;
+    }
 }
